@@ -8,7 +8,7 @@ sudo apt install ctags
 
 2) checkout submodules
 
-git submodules init
+git submodules init &&
 git submodules update
 
 3) install
