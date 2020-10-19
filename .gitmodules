@@ -1,6 +1,3 @@
-[submodule "python-mode"]
-	path = python-mode
-	url = https://github.com/python-mode/python-mode
 [submodule "vim-python-ide"]
 	path = vim-python-ide
 	url = https://github.com/jarolrod/vim-python-ide/
