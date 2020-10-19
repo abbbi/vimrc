@@ -386,3 +386,4 @@ let mapleader = ","
 inoremap " ""<Esc>i
 inoremap ' ''<Esc>i
 inoremap [ []<Esc>i
+inoremap (; ()<left>
