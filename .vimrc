@@ -385,3 +385,4 @@ map <C-n> :NERDTreeToggle<CR>
 let mapleader = ","
 inoremap " ""<Esc>i
 inoremap ' ''<Esc>i
+inoremap [ []<Esc>i
