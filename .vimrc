@@ -376,3 +376,7 @@ vno <up> <Nop>
 autocmd StdinReadPre * let g:isReadingFromStdin = 1
 autocmd VimEnter * nested if !argc() && !exists('g:isReadingFromStdin') | Startify | endif
 autocmd VimEnter * nested if !argc() && !exists('g:isReadingFromStdin') | NERDTree | endif
+
+ if has("autocmd")
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+ endif
