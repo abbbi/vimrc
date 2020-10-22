@@ -382,6 +382,8 @@ autocmd VimEnter * nested if !argc() && !exists('g:isReadingFromStdin') | NERDTr
  endif
 
 map <C-n> :NERDTreeToggle<CR>
+map <C-i> :setlocal nonumber<CR>
+map <C-o> :setlocal number<CR>
 let mapleader = ","
 inoremap " ""<Esc>i
 inoremap ' ''<Esc>i
