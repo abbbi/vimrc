@@ -165,7 +165,8 @@ let g:airline_powerline_fonts=1
 "=====================================================
 let g:tagbar_autofocus=0
 let g:tagbar_width=42
-autocmd BufEnter *.py :call tagbar#autoopen(0)
+""autocmd BufEnter *.py :call tagbar#autoopen(0)
+""autocmd BufEnter *.py :TagbarToggle
 "autocmd BufWinLeave *.py :TagbarClose
 
 "=====================================================
@@ -384,7 +385,8 @@ autocmd VimEnter * nested if !argc() && !exists('g:isReadingFromStdin') | NERDTr
 map <C-n> :NERDTreeToggle<CR>
 map <C-i> :setlocal nonumber<CR>
 map <C-o> :setlocal number<CR>
-map <C-u> :IndentGuidesToggle<CR>:ALEToggle<CR>:setlocal nonumber<CR>
+map <C-t> :TagbarToggle<CR>
+map <C-u> :IndentGuidesToggle<CR>:ALEToggle<CR>:TagbarToggle<CR>:setlocal nonumber<CR>
 let mapleader = ","
 inoremap " ""<Esc>i
 inoremap ' ''<Esc>i
