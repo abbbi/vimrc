@@ -392,6 +392,7 @@ map <C-i> :setlocal nonumber<CR>
 map <C-o> :setlocal number<CR>
 map <C-t> :TagbarToggle<CR>
 map <C-u> :IndentGuidesToggle<CR>:ALEToggle<CR>:TagbarToggle<CR>:setlocal nonumber<CR>
+map <C-y> :set autoindent noexpandtab tabstop=4 shiftwidth=4<CR>
 let mapleader = ","
 inoremap " ""<Esc>i
 inoremap ' ''<Esc>i
